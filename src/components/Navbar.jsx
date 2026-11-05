@@ -5,10 +5,10 @@ import useTheme from "../hooks/useTheme";
 import avatar from "../assets/mehedi-avatar.webp";
 
 const RESUME_URL =
-  "https://drive.google.com/file/d/1h4NazCSyRMc5itpNN3WmfGoC4aV1bfSg/view?usp=sharing";
+  "https://drive.google.com/file/d/1Bt4JG83JeaNZYAmbqBo503yYVaGGUGV_/view?usp=sharing";
 
 const COVER_LETTER_URL =
-  "https://drive.google.com/file/d/1bxjMSSrXs-4IlMfZaJElBfZOairSl98L/view?usp=sharing";
+  "https://drive.google.com/file/d/1e2Dcn_HKTXy8TDtRWcDnqKgVe2T4haM3/view?usp=sharing";
 
 const links = [
   { to: "/", label: "Home", end: true },
