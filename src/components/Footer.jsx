@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
+import avatar from "../assets/mehedi-avatar.webp";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -31,8 +32,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="flex items-center gap-4">
             <img
-              src="https://i.ibb.co/P82TdCk/481248708-1613480832612995-5037061505902725476-n.jpg"
+              src={avatar}
               alt=""
+              width="56"
+              height="56"
+              loading="lazy"
               className="h-14 w-14 rounded-full border border-line object-cover"
             />
             <div>

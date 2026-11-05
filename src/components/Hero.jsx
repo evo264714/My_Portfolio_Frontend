@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import portrait from "../assets/mehedi-portrait.webp";
 
 const stagger = (n) => ({ animationDelay: `${n * 0.12}s` });
 
@@ -72,8 +73,12 @@ export default function Hero() {
             />
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-line bg-ink-800">
               <img
-                src="https://i.ibb.co.com/fYnmFXPm/Professional-Beige-Blazer-Headshot.png"
+                src={portrait}
                 alt="Portrait of Mehedi Hasan"
+                width="800"
+                height="1000"
+                fetchPriority="high"
+                decoding="async"
                 className="h-full w-full object-cover"
               />
             </div>
