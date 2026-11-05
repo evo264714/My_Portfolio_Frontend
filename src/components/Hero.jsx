@@ -16,7 +16,7 @@ export default function Hero() {
               className="h-2 w-2 rounded-full bg-accent"
               aria-hidden="true"
             />
-            Available for freelance work
+            Available for work
           </p>
 
           <h1
@@ -37,8 +37,8 @@ export default function Hero() {
             className="hero-in mt-6 max-w-xl text-lg leading-relaxed text-muted"
             style={stagger(3)}
           >
-            I build fast, reliable web apps from the database to the interface,
-            using React, Node.js and MongoDB.
+            I turn ideas into working web apps, with logins, payments and admin
+            dashboards, and I explain every step in plain English.
           </p>
 
           <div
