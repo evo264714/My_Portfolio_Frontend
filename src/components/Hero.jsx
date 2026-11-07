@@ -1,94 +1,3 @@
-// import { Link } from "react-router-dom";
-// import portrait from "../assets/mehedi-portrait.webp";
-
-// const stagger = (n) => ({ animationDelay: `${n * 0.12}s` });
-
-// export default function Hero() {
-//   return (
-//     <section>
-//       <div className="mx-auto grid max-w-6xl items-center gap-14 px-6 pb-24 pt-16 md:pb-32 md:pt-24 lg:grid-cols-[1.25fr_0.75fr]">
-//         {/* Text */}
-//         <div>
-//           <p
-//             className="hero-in inline-flex items-center gap-2 rounded-full border border-line bg-ink-900 px-3.5 py-1.5 text-sm text-muted"
-//             style={stagger(0)}
-//           >
-//             <span
-//               className="h-2 w-2 rounded-full bg-accent"
-//               aria-hidden="true"
-//             />
-//             Available for work
-//           </p>
-
-//           <h1
-//             className="hero-in mt-6 font-display text-5xl font-bold leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl"
-//             style={stagger(1)}
-//           >
-//             Mehedi Hasan
-//           </h1>
-
-//           <p
-//             className="hero-in mt-4 font-display text-xl font-medium text-accent sm:text-2xl"
-//             style={stagger(2)}
-//           >
-//             MERN stack developer
-//           </p>
-
-//           <p
-//             className="hero-in mt-6 max-w-xl text-lg leading-relaxed text-muted"
-//             style={stagger(3)}
-//           >
-//             I turn ideas into working web apps, with logins, payments and admin
-//             dashboards, and I explain every step in plain English.
-//           </p>
-
-//           <div
-//             className="hero-in mt-9 flex flex-col gap-3 sm:flex-row"
-//             style={stagger(4)}
-//           >
-//             <Link
-//               to="/contacts"
-//               className="rounded-md bg-accent px-6 py-3 text-center font-semibold text-ink-950 transition hover:bg-accent/90"
-//             >
-//               Get in touch
-//             </Link>
-//             <Link
-//               to="/projects"
-//               className="rounded-md border border-line px-6 py-3 text-center font-semibold text-fg transition hover:border-subtle hover:bg-ink-800"
-//             >
-//               View projects
-//             </Link>
-//           </div>
-//         </div>
-
-//         {/* Photo */}
-//         <div
-//           className="hero-in mx-auto w-full max-w-sm lg:max-w-none"
-//           style={stagger(2)}
-//         >
-//           <div className="relative">
-//             <div
-//               className="absolute inset-0 translate-x-3 translate-y-3 rounded-2xl border border-accent/40"
-//               aria-hidden="true"
-//             />
-//             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-line bg-ink-800">
-//               <img
-//                 src={portrait}
-//                 alt="Portrait of Mehedi Hasan"
-//                 width="800"
-//                 height="1000"
-//                 fetchPriority="high"
-//                 decoding="async"
-//                 className="h-full w-full object-cover"
-//               />
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
 import { Link } from "react-router-dom";
 import { FiArrowRight, FiAward, FiBookOpen, FiMapPin } from "react-icons/fi";
 import { FaReact } from "react-icons/fa";
@@ -225,29 +134,29 @@ export default function Hero() {
             />
           </div>
 
-          {/* Floating code card */}
+          {/* Floating code card: small and low on phones, larger beside the face on sm+ */}
           <div
-            className="hero-in absolute -left-3 top-1/3 sm:-left-12"
+            className="hero-in absolute -left-2 bottom-14 sm:-left-12 sm:bottom-auto sm:top-2/3"
             style={stagger(5)}
             aria-hidden="true"
           >
-            <div className="float rounded-xl border border-line bg-ink-900/90 p-4 shadow-xl backdrop-blur">
-              <div className="mb-3 flex gap-1.5">
-                <span className="h-2 w-2 rounded-full bg-subtle/60" />
-                <span className="h-2 w-2 rounded-full bg-subtle/60" />
-                <span className="h-2 w-2 rounded-full bg-accent" />
+            <div className="float rounded-lg border border-line bg-ink-900/90 p-2.5 shadow-xl backdrop-blur sm:rounded-xl sm:p-4">
+              <div className="mb-2 flex gap-1 sm:mb-3 sm:gap-1.5">
+                <span className="h-1.5 w-1.5 rounded-full bg-subtle/60 sm:h-2 sm:w-2" />
+                <span className="h-1.5 w-1.5 rounded-full bg-subtle/60 sm:h-2 sm:w-2" />
+                <span className="h-1.5 w-1.5 rounded-full bg-accent sm:h-2 sm:w-2" />
               </div>
-              <div className="font-mono text-[11px] leading-5 text-muted sm:text-xs">
+              <div className="font-mono text-[9px] leading-4 text-muted sm:text-xs sm:leading-5">
                 <p>
                   <span className="text-accent">const</span> developer = {"{"}
                 </p>
-                <p className="pl-4">
+                <p className="pl-3 sm:pl-4">
                   stack: <span className="text-accent">{'"MERN"'}</span>,
                 </p>
-                <p className="pl-4">
+                <p className="pl-3 sm:pl-4">
                   auth: <span className="text-accent">true</span>,
                 </p>
-                <p className="pl-4">
+                <p className="pl-3 sm:pl-4">
                   payments: <span className="text-accent">{'"Stripe"'}</span>,
                 </p>
                 <p>{"};"}</p>
